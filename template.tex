@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+% Put your packages here. These are the ones I can't write a document without.
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfig}
+
+% The rest of the portion before '\begin{document}' is essentially the bulk of
+% the template.
+
+% 1-inch margins
+\usepackage[margin=1in]{geometry}
+
+% put figures and tables on separate pages at the end
+\usepackage{endfloat}
+
+% double space
+\linespread{1.6}
+
+% line numbers
+\usepackage{lineno}
+\linenumbers
+
+% superscript in-text citations
+\usepackage[numbers,super]{natbib}
+
+% url for website refs
+\usepackage{url}
+\urlstyle{same}
+
+% #. style reference numbering
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+
+\begin{document}
+
+% Title should not exceed 116 characters.
+\title{
+    Annals of Biomedical Engineering Template
+}
+\author{
+    Kenneth R. Lyons$^1$
+}
+\date{}
+
+\maketitle
+
+\begin{description}
+    \item[affiliations:]
+        $^1$Department of Mechanical and Aerospace Engineering,
+        University of California, Davis, Davis, CA, USA
+    \item[abbreviated title:]
+        Abbreviated Title Not Exceeding 55 Characters
+    \item[correspondence:]
+        Cor R. Espondence,
+        Department, University, City, ST, Country.
+        e-mail: \texttt{email@university.edu}
+\end{description}
+
+\newpage
+
+\begin{abstract}
+Abstract should be at most 200 words. One paragraph.
+\end{abstract}
+
+\textbf{keywords:} three to ten keywords
+
+\newpage
+
+\section{Introduction}
+\label{sec:introduction}
+
+Introduction. The whole document (including references but not figures/tables)
+must be under 6000 words. You are asked to provide the word count during the
+submission process.
+
+Citations are formatted as superscript numbers. \cite{journalpaper} Remember to
+put the citation after punctuation. \cite{book} ABME recommends keeping to
+about 30 references.
+
+Each figure and table will get its own page at the end of the document.
+
+\section{Materials and Methods}
+\label{sec:methods}
+Materials and methods.
+
+\section{Results}
+\label{sec:results}
+Results.
+
+\section{Discussion} 
+\label{sec:discussion}
+Discussion.
+
+\section*{Conflict of Interest} 
+Conflict of interest statement.
+ 
+\section*{Acknowledgment}
+Acknowledgments.
+
+\bibliographystyle{abme}
+% Uncomment this line to use a BibTeX file (e.g. 'library.bib' file during the
+% writing process.
+%\bibliography{library}
+
+% After references have been added (i.e. just before submission), copy the
+% contents of the '.bbl' file generated during compilation. It should look
+% something like the following. This will also give you a chance to fine-tune
+% the reference formatting (in case 'abme.bst' doesn't do it perfectly).
+\begin{thebibliography}{10}
+\bibitem{journalpaper}
+    Last, F. M., G. M. Family, and S. M. Dude.
+    \newblock
+    Reference title in sentence case.
+    \newblock
+    Journal Abbrv. 1:1--2, 1900.
+\bibitem{book}
+    Last, F. M. and G. M. Family.
+    \newblock
+    Book Title all Uppercase,
+    City, ST: Publisher 1900.
+\end{thebibliography}
+
+\end{document}

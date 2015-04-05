@@ -1,0 +1,21 @@
+# don't include compiled document
+*.pdf
+
+# generated during compilation
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex
+
+# generated figure/table files when using endfloat package
+*.fff
+*.lof
+*.ttt
+*.lot
+
+# vim swp
+*.swp
+
+# docx for word count
+wordcount/*.docx
